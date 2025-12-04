@@ -21,7 +21,7 @@ public class ItemEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long itemId;            // corresponds to itemID in ER
+    private Long itemId;
 
     @Column(nullable = false)
     private String name;
@@ -33,9 +33,9 @@ public class ItemEntity {
     private BigDecimal unitPrice;
 
     @Column(nullable = false)
-    private Integer qty;           // current stock
+    private Integer qty;
 
-    private LocalDate expiryDate;  // nullable for non-perishable items
+    private LocalDate expiryDate;
 
     @Column(nullable = false)
     private Integer reorderLevel;
