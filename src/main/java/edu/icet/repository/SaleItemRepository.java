@@ -1,4 +1,7 @@
 package edu.icet.repository;
 
-public interface SaleItemRepository {
+import edu.icet.model.entity.SaleItemEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SaleItemRepository extends JpaRepository<SaleItemEntity,Long> {
 }

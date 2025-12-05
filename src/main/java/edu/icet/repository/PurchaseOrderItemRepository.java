@@ -1,4 +1,7 @@
 package edu.icet.repository;
 
-public interface PurchaseOrderItemRepository {
+import edu.icet.model.entity.PurchaseOrderItemEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PurchaseOrderItemRepository extends JpaRepository<PurchaseOrderItemEntity,Long> {
 }

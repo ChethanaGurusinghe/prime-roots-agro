@@ -1,4 +1,7 @@
 package edu.icet.repository;
 
-public interface NotificationRepository {
+import edu.icet.model.entity.NotificationEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface NotificationRepository extends JpaRepository<NotificationEntity,Long> {
 }
